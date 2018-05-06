@@ -1,3 +1,8 @@
+import binancepart
+from binancepart import binanceClient
+from binancepart import checkIfTradable
+from binancepart import getPriceFromTicker
+from binancepart import acceptedOptions
 
 def balanceCheck(request = None, option = None):
     balanceAmount = 0
@@ -19,7 +24,7 @@ def balanceCheck(request = None, option = None):
             assetValue = float(total) * float(price)
             totalAssetValue += assetValue
 
-            print("{}{}{}{}{}{}".format(name, ": ", price, "$", " ", total))
+            # print("{}{}{}{}{}{}".format(name, ": ", price, "$", " ", total))
             if  option in acceptedOptions:
                 if checkIfTradable(name, option) is True:
                     optionPrice = getPriceFromTicker(name, option)
@@ -50,3 +55,7 @@ def balanceCheck(request = None, option = None):
             print("{}{}{}{}".format("In order: ", inOrder, " ", request))
         if free != 0.0 and inOrder != 0.0:
             print("{}{}{}{}".format("Total: ", total, " ", request))
+
+
+
+balanceCheck(4)

@@ -17,7 +17,7 @@ while choice not in acceptedChoice:
 
 objective = input('Objective? \n')
 while objective <= 0:
-    objective = input(retry)
+    objective = input('retry')
 
 
 
