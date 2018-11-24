@@ -1,4 +1,4 @@
-from binance.client import Client
+fgfrom binance.client import Client
 import re
 import os.path
 import pprint
