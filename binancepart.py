@@ -1,4 +1,4 @@
-fgfrom binance.client import Client
+from binance.client import Client
 import re
 import os.path
 import pprint
@@ -6,7 +6,7 @@ import math
 binanceClient = Client(api_key = "", api_secret="")
 acceptedOptions = 'ETH', 'BTC' 'USDT'
 
-#Test
+#Test on the second branch
 
 
 def calculateFilledAmount(openOrder, i=None):
