@@ -1,1 +1,1 @@
-# binanceChecker
+# binanceHelper
