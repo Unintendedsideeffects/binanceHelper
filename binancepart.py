@@ -6,6 +6,8 @@ import math
 binanceClient = Client(api_key = "", api_secret="")
 acceptedOptions = 'ETH', 'BTC' 'USDT'
 
+#Test
+
 
 def calculateFilledAmount(openOrder, i=None):
     filledPercentage = ((float)(openOrder["executedQty"])/(float)(openOrder["origQty"]))*100
